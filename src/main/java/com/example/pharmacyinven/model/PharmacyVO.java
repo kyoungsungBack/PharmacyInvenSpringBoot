@@ -6,8 +6,12 @@ public class PharmacyVO {
     private String name;
     private String address;
     private String phone;
+    
+    public PharmacyVO() {
+		super();
+	}
 
-    public PharmacyVO(int pharmaId, String name, String address, String phone) {
+	public PharmacyVO(int pharmaId, String name, String address, String phone) {
         this.pharmaId = pharmaId;
         this.name = name;
         this.address = address;
@@ -46,4 +50,10 @@ public class PharmacyVO {
         this.phone = phone;
     }
 
+	@Override
+	public String toString() {
+		return "PharmacyVO [pharmaId=" + pharmaId + ", name=" + name + ", address=" + address + ", phone=" + phone
+				+ "]";
+	}
+    
 }
